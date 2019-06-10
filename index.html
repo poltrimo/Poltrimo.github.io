@@ -192,6 +192,13 @@
             color:#b2b2b2;
             padding:10px;
         }
+        .DivisioContainer{
+            background:#222;
+            color:#b2b2b2;
+            width:auto;
+            height:304px;
+            margin-top:1px;
+        }
         label{
             color:#b2b2b2;
         }
@@ -269,6 +276,9 @@
                 display:block;
             }
             .Divisio .Divisio2{
+                display:block;
+            }
+            .Divisio .Divisio2 .DivisioContainer{
                 width:100%;
                 margin:0 0 10px 0;
             }
@@ -320,6 +330,9 @@
             .mobile-nav{
                 display:none;
             }
+        }
+        .vdo {
+            width:100%;
         }
     </style>
 </head>
@@ -408,9 +421,11 @@
         <h2>Treballs</h2>
         <div class="Divisio">
             <div class="Divisio2">
-               <br><br><br><br>
-                <img src="Images/2danimation.png" alt="">
-                <br><br><br><br><br>
+               <div class="DivisioContainer">
+               <video class="vdo" width="320" height="240" controls>
+               <source src="Images/videofinal.mp4" type="video/mp4">
+               </video>
+               </div>
                 <h3>Animació 2D/3D</h3>
                 <p>
                     Produeixo videos i anuncis animant en 2D i 3D basant-me en les idees o instruccions donades. Admiro les animacions ben aconseguides.
@@ -433,9 +448,7 @@
                 </p>
             </div>
             <div class="Divisio2">
-               <br><br><br><br>
-                <img src="Images/Img1.jpeg" alt="">
-                <br><br><br><br>
+               <img class="flimg" src="Images/img11.jpg" alt="">
                 <h3>Impressió i Escaneig 3D</h3>
                 <p>
                     Preparo arxius per ser impresos, els imprimeixo i tinc coneixements per a reparar certes impressores 3D. A vegades imprimeixo figuretes de videojocs.
