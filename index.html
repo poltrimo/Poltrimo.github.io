@@ -340,6 +340,9 @@
             height:100%;
             align-content:middle;
         }
+        .mySlides {
+            display:none;
+        }
     </style>
 </head>
 <body>
@@ -435,15 +438,33 @@
                 <p>
                     Produeixo videos i anuncis animant en 2D i 3D basant-me en les idees o instruccions donades. Admiro les animacions ben aconseguides.
                 </p>
-            </div>
-            <div class="Divisio2" id="slider">
-                    <img src="Images/alba4.jpg" alt="">
-                    <img src="Images/rachel.jpg" alt="">
-                    <img src="Images/ainaabuli.jpg" alt="">
-                <h3>Dibuix</h3>
-                <p>
-                    Dibuixo per projectes personals. Cap idea es insignificant i tothom mereix tenir veu a internet.
-                </p>
+             </div>
+                <div class="Divisio2" id="slider">
+                 <div class="w3-content w3-section" style="max-width:500px">
+                 <img class="mySlides" src="Images/alba4.jpg" style="width:100%">
+                 <img class="mySlides" src="Images/rachel.jpg" style="width:100%">
+                 <img class="mySlides" src="Images/ainaabuli.jpg" style="width:100%">
+                 </div>
+                 <h3>Dibuix</h3>
+                   <p>
+                   Dibuixo per projectes personals. Cap idea es insignificant i tothom mereix tenir veu a internet.
+                   </p>
+                   <script>
+                       var myIndex = 0;
+                       carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
             </div>
         </div>
         <div class="Divisio">
